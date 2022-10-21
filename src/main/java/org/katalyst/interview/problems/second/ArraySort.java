@@ -8,10 +8,10 @@ import java.util.stream.Collectors;
 public class ArraySort {
 
     /**
-     *
-     * @param values
-     * @param top
-     * @return
+     * Get top values from the list after its sorted.
+     * @param values List to be sorted and limited
+     * @param top How many values from the list will be returned
+     * @return New List with the top values in it.
      */
     public static List<Integer> topValues(List<Integer> values, Integer top){
         return values.stream()

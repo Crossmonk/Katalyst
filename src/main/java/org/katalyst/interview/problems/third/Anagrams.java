@@ -6,16 +6,16 @@ import java.util.stream.Stream;
 public class Anagrams {
 
     /**
-     *
-     * @param one
-     * @param two
-     * @return
+     * Evaluate 2 String to determine if they're anagrams.
+     * @param first String to be compared
+     * @param second String to be compared
+     * @return True for anagram, false if not.
      */
-    public static Boolean areAnagram(String one, String two){
-        String stringOneSorted = Stream.of(one.split(""))
+    public static Boolean areAnagram(String first, String second){
+        String stringOneSorted = Stream.of(first.split(""))
                 .sorted().collect(Collectors.joining());
 
-        String stringTwoSorted = Stream.of(two.split(""))
+        String stringTwoSorted = Stream.of(second.split(""))
                 .sorted().collect(Collectors.joining());
 
         return stringOneSorted.equals(stringTwoSorted);
